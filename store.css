@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.language-dropdown {
+    position: relative;
+}
+
+.language-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-dropdown:hover .language-menu {
+    display: block;
+}
+
+.language-menu li {
+    padding: 10px;
+}
+
+.language-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cambia el color del enlace al hacer hover */
+.nav-links a:hover {
+    color: #e53935;
+}
+
+/* Estilo para el navbar cuando hace scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.hero {
+    background-image: url('/img/asd2.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    background-color: #141414;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);;
+    padding: 25px 0;;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.language-dropdown {
+    position: relative;
+}
+.language-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.language-dropdown:hover .language-menu {
+    display: block;
+}
+
+.language-menu li {
+    padding: 10px;;
+}
+
+.language-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+.carousel-container {
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    display: none;
+  }
+
+  .carousel-slide img {
+    width: 400;
+  }
+
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .product-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Aumenta el espacio entre columnas */
+  }
+  
+  .product-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre tarjetas en una columna */
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 0px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+  }
+  
+  .product-card:hover {
+    background-color: #f0f0f0;
+  }
+  .product-card img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 150px; /* Ajusta la altura máxima de la imagen */
+    object-fit: contain; /* Ajusta cómo se ajusta la imagen dentro del contenedor */
+  }
